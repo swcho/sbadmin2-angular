@@ -34,3 +34,63 @@ angular.module('almReportWeb').run(function($rootScope) {
     };
 
 });
+
+angular.module('almReportWeb').controller('HeaderCtrl',function($scope){
+    $scope.title = 'Title';
+    $scope.sidebar = {
+        menuItemList: [{
+            sref: 'root.dashboard',
+            ico: 'fa-dashboard',
+            name: 'Dashboard Type'
+        }, {
+            sref: 'root.chart',
+            ico: 'fa-bar-chart-o',
+            name: 'Chart Type'
+        }, {
+            sref: 'root.table',
+            ico: 'fa-table',
+            name: 'Table Type'
+        }, {
+            sref: 'root.form',
+            ico: 'fa-edit',
+            name: 'Form Type'
+        }, {
+            ico: 'fa-wrench',
+            name: 'UI Elements',
+            subMenuItemList: [{
+                sref: 'root.panels-wells',
+                name: 'Panels and Wells'
+            }, {
+                sref: 'root.buttons',
+                name: 'Buttons'
+            }, {
+                sref: 'root.notifications',
+                name: 'Notifications'
+            }, {
+                sref: 'root.typography',
+                name: 'Typography'
+            }, {
+                sref: 'root.icons',
+                name: 'Icons'
+            }, {
+                sref: 'root.grid',
+                name: 'Grid'
+            }]
+        }, {
+            ico: 'fa-files-o',
+            name: 'Sample Pages',
+            subMenuItemList: [{
+                sref: 'root.blank',
+                name: 'Blank Page'
+            }, {
+                sref: 'login',
+                name: 'Login Page'
+            }]
+        }]
+    };
+    $scope.menuItemList = [{
+
+    }, {
+
+    }];
+});

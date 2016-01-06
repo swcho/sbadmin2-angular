@@ -11,14 +11,19 @@ angular.module('sbadmin2').directive('sidebar', ['$location', function () {
         templateUrl: 'directive/sidebar/sidebar.html',
         restrict: 'E',
         replace: true,
-        scope: {},
+        scope: {
+            data: '='
+        },
+        //link: function(scope, element, attrs) {
+        //    console.log(attrs);
+        //},
         controller: function ($scope) {
             $scope.selectedMenu = 'dashboard';
             $scope.collapseVar = 0;
             $scope.multiCollapseVar = 0;
 
             $scope.check = function (x) {
-
+                console.log(x);
                 if (x === $scope.collapseVar) {
                     $scope.collapseVar = 0;
                 } else {
