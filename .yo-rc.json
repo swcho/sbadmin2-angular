@@ -18,6 +18,12 @@
         "marker": "/* Add Component LESS Above */",
         "template": "@import \"<%= filename %>\";"
       }
-    }
+    },
+    "modules": [
+      {
+        "name": "sbadmin2",
+        "file": "sbadmin2/sbadmin2.js"
+      }
+    ]
   }
 }

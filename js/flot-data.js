@@ -1,4 +1,5 @@
 //Flot Line Chart
+/* jshint ignore:start */
 $(document).ready(function() {
     console.log("document ready");
     var offset = 0;
@@ -1240,3 +1241,4 @@ $(function() {
     $.plot($("#flot-bar-chart"), [barData], barOptions);
 
 });
+/* jshint ignore:end */

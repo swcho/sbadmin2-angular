@@ -1,3 +1,4 @@
+/* jshint ignore:start */
 $(function() {
 
     Morris.Area({
@@ -115,3 +116,4 @@ $(function() {
     });
 
 });
+/* jshint ignore:end */
