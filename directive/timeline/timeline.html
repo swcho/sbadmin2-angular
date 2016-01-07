@@ -9,7 +9,7 @@
                     <h4 class="timeline-title">{{item.title}}</h4>
                     <p ng-if="item.dateAnnotation">
                         <small class="text-muted"><i class="fa fa-clock-o"></i>
-                            {{getDateString(item.dateAnnotation.date)}} {{item.dateAnnotation.description}}
+                            {{item.dateAnnotation.date | fromNow}} {{item.dateAnnotation.description}}
                         </small>
                     </p>
                 </div>

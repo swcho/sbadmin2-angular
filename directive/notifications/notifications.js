@@ -9,6 +9,9 @@ angular.module('sbadmin2').directive('notifications', function () {
     return {
         templateUrl: 'directive/notifications/notifications.html',
         restrict: 'E',
-        replace: true
+        replace: true,
+        scope: {
+            items: '='
+        }
     };
 });

@@ -75,4 +75,42 @@ angular.module('almReportWeb').controller('DashboardCtrl',function($scope){
     }];
 
 
+    $scope.notificationList = [{
+        ico: 'fa-comment',
+        title: 'New Comment',
+        date: new Date()
+    }, {
+        ico: 'fa-twitter',
+        title: '3 New Followers',
+        date: new Date()
+    }, {
+        ico: 'fa-envelope',
+        title: 'Message Sent',
+        date: new Date()
+    }, {
+        ico: 'fa-tasks',
+        title: 'New Task',
+        date: new Date()
+    }, {
+        ico: 'fa-upload',
+        title: 'Server Rebooted',
+        date: new Date()
+    }, {
+        ico: 'fa-bolt',
+        title: 'Server Crashed!',
+        date: new Date()
+    }, {
+        ico: 'fa-warning',
+        title: 'Server Not Responding',
+        date: new Date()
+    }, {
+        ico: 'fa-shopping-cart',
+        title: 'New Order Placed',
+        date: new Date()
+    }, {
+        ico: 'fa-money',
+        title: 'Payment Received',
+        date: new Date()
+    }];
+
 });
