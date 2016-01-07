@@ -9,6 +9,18 @@ angular.module('sbadmin2').directive('timeline', function () {
     return {
         templateUrl: 'directive/timeline/timeline.html',
         restrict: 'E',
-        replace: true
+        scope: {
+            items: '='
+        },
+        replace: true,
+        link: function($scope, $sce) {
+            $scope.getDateString = function(date) {
+                return date.toString();
+            };
+            $scope.trust = function(html) {
+                console.log(html);
+                return html;
+            };
+        }
     };
 });
