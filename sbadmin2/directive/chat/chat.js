@@ -4,14 +4,14 @@
  * @description
  * # adminPosHeader
  */
-angular.module('sbadmin2').directive('notifications', function () {
+angular.module('sbadmin2').directive('chat', function (SBADMIN2_ROOT) {
     'use strict';
     return {
-        templateUrl: 'directive/notifications/notifications.html',
+        templateUrl: SBADMIN2_ROOT + 'directive/chat/chat.html',
         restrict: 'E',
         replace: true,
         scope: {
-            items: '='
+            title: '='
         }
     };
 });

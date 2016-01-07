@@ -5,10 +5,10 @@
  * # adminPosHeader
  */
 
-angular.module('sbadmin2').directive('sidebar', ['$location', function () {
+angular.module('sbadmin2').directive('sidebar', function (SBADMIN2_ROOT) {
     'use strict';
     return {
-        templateUrl: 'directive/sidebar/sidebar.html',
+        templateUrl: SBADMIN2_ROOT + 'directive/sidebar/sidebar.html',
         restrict: 'E',
         replace: true,
         scope: {
@@ -42,4 +42,4 @@ angular.module('sbadmin2').directive('sidebar', ['$location', function () {
             };
         }
     };
-}]);
+});

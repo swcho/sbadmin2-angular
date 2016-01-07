@@ -5,10 +5,10 @@
  * # adminPosHeader
  */
 
-angular.module('sbadmin2').directive('sidebarSearch', function () {
+angular.module('sbadmin2').directive('sidebarSearch', function (SBADMIN2_ROOT) {
     'use strict';
     return {
-        templateUrl: 'directive/sidebar/sidebar-search/sidebar-search.html',
+        templateUrl: SBADMIN2_ROOT + 'directive/sidebar/sidebar-search/sidebar-search.html',
         restrict: 'E',
         replace: true,
         scope: {},
