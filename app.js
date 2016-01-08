@@ -11,6 +11,56 @@ angular.module('almReportWeb').config(function($stateProvider, $urlRouterProvide
         templateUrl: 'partial/dashboard/dashboard.html'
     });
 
+    $stateProvider.state('root.chart', {
+        url: '/chart',
+        templateUrl: 'partial/chart/chart.html'
+    });
+
+    $stateProvider.state('root.table', {
+        url: '/table',
+        templateUrl: 'partial/table/table.html'
+    });
+
+    $stateProvider.state('root.form', {
+        url: '/form',
+        templateUrl: 'partial/form/form.html'
+    });
+
+    $stateProvider.state('root.panels-wells', {
+        url: '/panels-wells',
+        templateUrl: 'partial/panels-wells/panels-wells.html'
+    });
+
+    $stateProvider.state('root.buttons', {
+        url: '/buttons',
+        templateUrl: 'partial/buttons/buttons.html'
+    });
+
+    $stateProvider.state('root.notifications', {
+        url: '/notifications',
+        templateUrl: 'partial/notifications/notifications.html'
+    });
+
+    $stateProvider.state('root.typography', {
+        url: '/typography',
+        templateUrl: 'partial/typography/typography.html'
+    });
+
+    $stateProvider.state('root.icons', {
+        url: '/icons',
+        templateUrl: 'partial/icons/icons.html'
+    });
+
+    $stateProvider.state('root.blank', {
+        url: '/blank',
+        templateUrl: 'partial/blank/blank.html'
+    });
+
+    $stateProvider.state('login', {
+        url: '/login',
+        templateUrl: 'partial/login/login.html'
+    });
+
     $stateProvider.state('root.about', {
         url: '/about',
         templateUrl: 'partial/about/about.html'
