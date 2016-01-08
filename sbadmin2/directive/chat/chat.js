@@ -11,7 +11,7 @@ angular.module('sbadmin2').directive('chat', function (SBADMIN2_ROOT) {
         restrict: 'E',
         replace: true,
         scope: {
-            title: '='
+            title: '@'
         }
     };
 });
