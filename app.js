@@ -62,6 +62,11 @@ angular.module('almReportWeb').config(function($stateProvider, $urlRouterProvide
         templateUrl: 'partial/icons/icons.html'
     });
 
+    $stateProvider.state('root.grid', {
+        url: '/grid',
+        templateUrl: 'partial/grid/grid.html'
+    });
+
     $stateProvider.state('root.blank', {
         url: '/blank',
         templateUrl: 'partial/blank/blank.html'
