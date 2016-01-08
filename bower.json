@@ -22,6 +22,8 @@
     "moment": "~2.5",
     "less.js": "~1.6",
     "font-awesome": "~4.5.0",
-    "twitter-bootstrap-wizard": "~1.0.0"
+    "twitter-bootstrap-wizard": "~1.0.0",
+    "angular-chart.js": "~0.8.8",
+    "oclazyload": "~1.0.9"
   }
 }

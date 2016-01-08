@@ -1,4 +1,4 @@
-angular.module('almReportWeb', ['ui.bootstrap', 'ui.utils', 'ui.router', 'ngAnimate', 'sbadmin2']);
+angular.module('almReportWeb', ['oc.lazyLoad', 'ui.bootstrap', 'ui.utils', 'ui.router', 'ngAnimate', 'sbadmin2']);
 
 angular.module('almReportWeb').config(function($stateProvider, $urlRouterProvider) {
 
@@ -13,7 +13,18 @@ angular.module('almReportWeb').config(function($stateProvider, $urlRouterProvide
 
     $stateProvider.state('root.chart', {
         url: '/chart',
-        templateUrl: 'partial/chart/chart.html'
+        templateUrl: 'partial/chart/chart.html',
+        controller: 'ChartCtrl',
+        resolve: {
+            loadMyFile:function($ocLazyLoad) {
+                return $ocLazyLoad.load([
+                        'bower_components/Chart.js/Chart.js',
+                        'bower_components/angular-chart.js/dist/angular-chart.min.js',
+                        'bower_components/angular-chart.js/dist/angular-chart.css',
+                        'partial/chart/chart.js'
+                    ]);
+            }
+        }
     });
 
     $stateProvider.state('root.table', {

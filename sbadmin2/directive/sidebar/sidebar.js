@@ -23,7 +23,6 @@ angular.module('sbadmin2').directive('sidebar', function (SBADMIN2_ROOT) {
             $scope.multiCollapseVar = 0;
 
             $scope.check = function (x) {
-                console.log(x);
                 if (x === $scope.collapseVar) {
                     $scope.collapseVar = 0;
                 } else {
