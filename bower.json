@@ -1,6 +1,6 @@
 {
   "name": "sbadmin2-angluar",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "main": [
     "sbadmin2/sbadmin2.js",
     "sbadmin2/sbadmin2.css"
@@ -8,7 +8,8 @@
   "ignore": [
     "**/.*",
     "node_modules",
-    "bower_components"
+    "bower_components",
+    "partial"
   ],
   "dependencies": {
     "jquery": "~2.0",
