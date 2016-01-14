@@ -40,14 +40,14 @@ module.exports = function (grunt) {
     connect: {
       main: {
         options: {
-          port: 9001
+          port: 9002
         }
       }
     },
     watch: {
       main: {
         options: {
-            livereload: true,
+            livereload: 35730,
             livereloadOnError: false,
             spawn: false
         },

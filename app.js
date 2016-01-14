@@ -104,6 +104,9 @@ angular.module('almReportWeb').run(function($rootScope) {
 angular.module('almReportWeb').controller('HeaderCtrl',function($scope){
     $scope.title = 'Title';
     $scope.sidebar = {
+        search: {
+
+        },
         menuItemList: [{
             sref: 'root.dashboard',
             ico: 'fa-dashboard',
