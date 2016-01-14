@@ -154,9 +154,68 @@ angular.module('almReportWeb').controller('HeaderCtrl',function($scope){
             }]
         }]
     };
-    $scope.menuItemList = [{
-
+    $scope.notifications = [{
+        type: 'message',
+        messages: [{
+            from: 'John Smith',
+            href: '',
+            date: new Date(),
+            body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eleifend...'
+        }, {
+            from: 'John Smith',
+            href: '',
+            date: new Date(),
+            body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eleifend...'
+        }, {
+            from: 'John Smith',
+            href: '',
+            date: new Date(),
+            body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eleifend...'
+        }]
     }, {
-
+        type: 'progress',
+        progresses: [{
+            name: 'Task 1',
+            type: 'success',
+            progress: 40
+        }, {
+            name: 'Task 2',
+            type: 'info',
+            progress: 20
+        }, {
+            name: 'Task 3',
+            type: 'warning',
+            progress: 60
+        }, {
+            name: 'Task 4',
+            type: 'danger',
+            progress: 80
+        }]
+    },  {
+        type: 'alarm',
+        alarms: [{
+            ico: 'fa-comment',
+            title: 'New Comment',
+            date: new Date()
+        }, {
+            ico: 'fa-twitter',
+            title: '3 New Followers',
+            date: new Date()
+        }, {
+            ico: 'fa-envelope',
+            title: 'Message Sent',
+            date: new Date()
+        }, {
+            ico: 'fa-tasks',
+            title: 'New Task',
+            date: new Date()
+        }, {
+            ico: 'fa-upload',
+            title: 'Server Rebooted',
+            date: new Date()
+        }]
+    }, {
+        type: 'user'
     }];
+
 });

@@ -9,7 +9,10 @@ angular.module('SBAdmin2').directive('headerNotification', function (SBADMIN2_RO
     return {
         templateUrl: SBADMIN2_ROOT + 'directive/header/header-notification/header-notification.html',
         restrict: 'E',
-        replace: true
+        replace: true,
+        scope: {
+            notifications: '='
+        }
     };
 });
 

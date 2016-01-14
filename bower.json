@@ -1,7 +1,10 @@
 {
   "name": "sbadmin2-angluar",
   "version": "0.0.0",
-  "main": "index.html",
+  "main": [
+    "sbadmin2/sbadmin2.js",
+    "sbadmin2/sbadmin2.css"
+  ],
   "ignore": [
     "**/.*",
     "node_modules",
@@ -25,5 +28,9 @@
     "twitter-bootstrap-wizard": "~1.0.0",
     "angular-chart.js": "~0.8.8",
     "oclazyload": "~1.0.9"
+  },
+  "keywords": {
+    "sbadmin2",
+    "angular"
   }
 }
