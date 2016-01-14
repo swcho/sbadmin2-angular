@@ -10,7 +10,14 @@
     "node_modules",
     "bower_components",
     "partial",
-    "bower.json"
+    "view",
+    "bower.json",
+    "app.*",
+    "index.html",
+    "README.md",
+    "Gruntfile.js",
+    "gulpfile.js",
+    "package.json"
   ],
   "dependencies": {
     "jquery": "~2.0",
