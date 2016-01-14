@@ -6,7 +6,7 @@
     "grunt-angular-templates": "~0.5",
     "grunt-browser-output": "0.1.0",
     "grunt-contrib-clean": "~0.5",
-    "grunt-contrib-concat": "~0.3",
+    "grunt-contrib-concat": "^0.3.0",
     "grunt-contrib-connect": "~0.6",
     "grunt-contrib-copy": "~0.5",
     "grunt-contrib-cssmin": "~0.7",

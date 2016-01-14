@@ -5,7 +5,7 @@
  * # adminPosHeader
  */
 
-angular.module('sbadmin2').directive('sidebar', function (SBADMIN2_ROOT) {
+angular.module('SBAdmin2').directive('sidebar', function (SBADMIN2_ROOT) {
     'use strict';
     return {
         templateUrl: SBADMIN2_ROOT + 'directive/sidebar/sidebar.html',

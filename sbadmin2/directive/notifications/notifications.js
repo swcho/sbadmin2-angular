@@ -4,7 +4,7 @@
  * @description
  * # adminPosHeader
  */
-angular.module('sbadmin2').directive('notifications', function (SBADMIN2_ROOT) {
+angular.module('SBAdmin2').directive('notifications', function (SBADMIN2_ROOT) {
     'use strict';
     return {
         templateUrl: SBADMIN2_ROOT + 'directive/notifications/notifications.html',

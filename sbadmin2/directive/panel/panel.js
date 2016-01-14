@@ -1,5 +1,5 @@
 
-angular.module('sbadmin2').directive('panel', function(SBADMIN2_ROOT) {
+angular.module('SBAdmin2').directive('panel', function(SBADMIN2_ROOT) {
 	return {
 		restrict: 'E',
 		replace: true,

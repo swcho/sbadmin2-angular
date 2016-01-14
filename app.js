@@ -1,4 +1,4 @@
-angular.module('almReportWeb', ['oc.lazyLoad', 'ui.bootstrap', 'ui.utils', 'ui.router', 'ngAnimate', 'sbadmin2']);
+angular.module('almReportWeb', ['oc.lazyLoad', 'ui.bootstrap', 'ui.utils', 'ui.router', 'ngAnimate', 'SBAdmin2']);
 
 angular.module('almReportWeb').config(function($stateProvider, $urlRouterProvider) {
 

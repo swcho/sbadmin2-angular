@@ -1,6 +1,6 @@
 describe('panel', function() {
 
-  beforeEach(module('sbadmin2'));
+  beforeEach(module('SBAdmin2'));
 
   var scope,compile;
 
