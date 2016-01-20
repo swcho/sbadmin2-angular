@@ -35,13 +35,37 @@ module.exports = function (grunt) {
   // load all grunt tasks
   require('load-grunt-tasks')(grunt);
 
+  var rewriteModule = require('http-rewrite-middleware');
+  var context = 'sbadmin2';
+
   // Project configuration.
   grunt.initConfig({
     connect: {
       main: {
         options: {
-          port: 9002
-        }
+          port: 9002,
+          // ref: http://stackoverflow.com/questions/21400675/using-grunt-contrib-connect-open-page-url-with-added-context-path
+          // or use ntext
+          // ref: https://github.com/viart/grunt-connect-rewrite
+          middleware: function (connect, options, middlewares) {
+            //console.log(options);
+            middlewares.unshift(rewriteModule.getMiddleware([
+              //Load App under context-root of 'myappcontext/secured'
+              {from: '^/' + context + '(.*)$', to: '/$1'},
+
+              //Redirect slash to myappcontext/secured as convenience
+              {from: '^/$', to: context, redirect: 'permanent'},
+
+              //Send a 404 for anything else
+              //{from: '^/.+$', to: '/404'}
+            ]));
+            return middlewares;
+          }
+        },
+        proxies: [{
+          context: '/google',
+          host: 'www.google.com'
+        }]
       }
     },
     watch: {

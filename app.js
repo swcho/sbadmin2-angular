@@ -108,51 +108,51 @@ angular.module('almReportWeb').controller('HeaderCtrl',function($scope){
 
         },
         menuItemList: [{
-            sref: 'root.dashboard',
+            href: '#/dashboard',
             ico: 'fa-dashboard',
             name: 'Dashboard Type'
         }, {
-            sref: 'root.chart',
+            href: '#/chart',
             ico: 'fa-bar-chart-o',
             name: 'Chart Type'
         }, {
-            sref: 'root.table',
+            href: '#/table',
             ico: 'fa-table',
             name: 'Table Type'
         }, {
-            sref: 'root.form',
+            href: '#/form',
             ico: 'fa-edit',
             name: 'Form Type'
         }, {
             ico: 'fa-wrench',
             name: 'UI Elements',
             subMenuItemList: [{
-                sref: 'root.panels-wells',
+                href: '#/panels-wells',
                 name: 'Panels and Wells'
             }, {
-                sref: 'root.buttons',
+                href: '#/buttons',
                 name: 'Buttons'
             }, {
-                sref: 'root.notifications',
+                href: '#/notifications',
                 name: 'Notifications'
             }, {
-                sref: 'root.typography',
+                href: '#/typography',
                 name: 'Typography'
             }, {
-                sref: 'root.icons',
+                href: '#/icons',
                 name: 'Icons'
             }, {
-                sref: 'root.grid',
+                href: '#/grid',
                 name: 'Grid'
             }]
         }, {
             ico: 'fa-files-o',
             name: 'Sample Pages',
             subMenuItemList: [{
-                sref: 'root.blank',
+                href: '#/blank',
                 name: 'Blank Page'
             }, {
-                sref: 'login',
+                href: '#/login',
                 name: 'Login Page'
             }]
         }]

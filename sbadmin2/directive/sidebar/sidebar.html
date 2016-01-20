@@ -4,7 +4,7 @@
             <sidebar-search ng-if="data.search"></sidebar-search>
 
             <li ng-repeat="menuItem in data.menuItemList" ui-sref-active="active">
-                <a ng-if="!menuItem.subMenuItemList" ui-sref="{{menuItem.sref}}" ng-click="check($index)">
+                <a ng-if="!menuItem.subMenuItemList" ng-href="{{menuItem.href}}" ng-click="check($index)">
                     <i class="fa fa-fw" ng-class="menuItem.ico"></i> {{menuItem.name}}
                 </a>
 
@@ -14,7 +14,7 @@
 
                 <ul class="nav nav-second-level" collapse="collapseVar!=$index">
                     <li ng-repeat="subMenuItem in menuItem.subMenuItemList"  ui-sref-active="active">
-                        <a ui-sref="{{subMenuItem.sref}}">{{subMenuItem.name}}</a>
+                        <a ng-href="{{subMenuItem.href}}">{{subMenuItem.name}}</a>
                     </li>
                 </ul>
             </li>
