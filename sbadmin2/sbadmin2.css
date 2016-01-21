@@ -1,9 +1,3 @@
-.diff-dec {
-  color: red;
-}
-.diff-inc {
-  color: blue;
-}
 .timeline {
   position: relative;
   padding: 20px 0 20px;
@@ -156,6 +150,12 @@
     border-right-width: 14px;
     border-left-width: 0;
   }
+}
+.diff-dec {
+  color: red;
+}
+.diff-inc {
+  color: blue;
 }
 body {
   background-color: #f8f8f8;
