@@ -1,3 +1,9 @@
+.diff-dec {
+  color: red;
+}
+.diff-inc {
+  color: blue;
+}
 .timeline {
   position: relative;
   padding: 20px 0 20px;
