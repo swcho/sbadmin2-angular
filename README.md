@@ -7,3 +7,9 @@ Based on next projects.
 * http://start-angular.github.io/sb-admin-angular/preview/#/dashboard/home
 
 This project goal is making directives more configurable.
+
+Install
+
+```shell
+bower install https://github.com/swcho/sbadmin2-angular.git --save
+```
