@@ -112,6 +112,14 @@ module.exports = function (grunt) {
         },
         src: [createFolderGlobs('*.html'),'!index.html','!_SpecRunner.html'],
         dest: 'temp/templates.js'
+      },
+      sbadmin2: {
+        options: {
+          module: 'SBAdmin2',
+          htmlmin:'<%= htmlmin.main.options %>'
+        },
+        src: ['sbadmin2/directive/**/*.html'],
+        dest: 'temp/templates.js'
       }
     },
     copy: {
@@ -160,7 +168,7 @@ module.exports = function (grunt) {
         dest: 'temp/app.full.js'
       },
       sbadmin2: {
-        src: ['sbadmin2/sbadmin2_bootstrap.js', 'sbadmin2/directive/**/*.js', '!**/*-spec.js'],
+        src: ['sbadmin2/sbadmin2_bootstrap.js', 'temp/templates.js', 'sbadmin2/directive/**/*.js', '!**/*-spec.js'],
         dest: 'sbadmin2/sbadmin2.js'
       }
     },
@@ -229,7 +237,7 @@ module.exports = function (grunt) {
   });
 
   grunt.registerTask('build',['jshint','clean:before','less','dom_munger','ngtemplates','cssmin','concat','ngAnnotate','uglify','copy','htmlmin','clean:after']);
-  grunt.registerTask('serve', ['dom_munger:read','jshint', 'concat', 'connect', 'watch']);
+  grunt.registerTask('serve', ['dom_munger:read','jshint', 'ngtemplates:sbadmin2', 'concat:sbadmin2', 'connect', 'watch']);
   grunt.registerTask('test',['dom_munger:read','karma:all_tests']);
 
   grunt.event.on('watch', function(action, filepath) {
