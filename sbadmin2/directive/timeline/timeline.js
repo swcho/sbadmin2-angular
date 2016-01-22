@@ -4,10 +4,10 @@
  * @description
  * # adminPosHeader
  */
-angular.module('SBAdmin2').directive('timeline', function (SBADMIN2_ROOT) {
+angular.module('SBAdmin2').directive('timeline', function () {
     'use strict';
     return {
-        templateUrl: SBADMIN2_ROOT + 'directive/timeline/timeline.html',
+        templateUrl: 'sbadmin2/directive/timeline/timeline.html',
         restrict: 'E',
         scope: {
             items: '='

@@ -4,10 +4,10 @@
  * @description
  * # adminPosHeader
  */
-angular.module('SBAdmin2').directive('chat', function (SBADMIN2_ROOT) {
+angular.module('SBAdmin2').directive('chat', function () {
     'use strict';
     return {
-        templateUrl: SBADMIN2_ROOT + 'directive/chat/chat.html',
+        templateUrl: 'sbadmin2/directive/chat/chat.html',
         restrict: 'E',
         replace: true,
         scope: {

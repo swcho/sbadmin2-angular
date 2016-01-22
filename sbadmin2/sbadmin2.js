@@ -8,12 +8,10 @@
         };
     });
 
-    var scripts = document.getElementsByTagName("script");
-    var currentScriptPath = scripts[scripts.length-1].src.replace('sbadmin2.js', '');
-
-    console.info('SBAdmin2 loaded from: ' + currentScriptPath);
-
-    sbadmin2.constant('SBADMIN2_ROOT', currentScriptPath);
+    //var scripts = document.getElementsByTagName("script");
+    //var currentScriptPath = scripts[scripts.length-1].src.replace('sbadmin2.js', '');
+    //console.info('SBAdmin2 loaded from: ' + currentScriptPath);
+    //sbadmin2.constant('SBADMIN2_ROOT', currentScriptPath);
 
     sbadmin2.config(function($stateProvider) {
 
@@ -83,10 +81,10 @@ angular.module('SBAdmin2').run(['$templateCache', function($templateCache) {
  * @description
  * # adminPosHeader
  */
-angular.module('SBAdmin2').directive('chat', function (SBADMIN2_ROOT) {
+angular.module('SBAdmin2').directive('chat', function () {
     'use strict';
     return {
-        templateUrl: SBADMIN2_ROOT + 'directive/chat/chat.html',
+        templateUrl: 'sbadmin2/directive/chat/chat.html',
         restrict: 'E',
         replace: true,
         scope: {
@@ -101,10 +99,10 @@ angular.module('SBAdmin2').directive('chat', function (SBADMIN2_ROOT) {
  * @description
  * # adminPosHeader
  */
-angular.module('SBAdmin2').directive('stats', function (SBADMIN2_ROOT) {
+angular.module('SBAdmin2').directive('stats', function () {
     'use strict';
     return {
-        templateUrl: SBADMIN2_ROOT + 'directive/dashboard/stats/stats.html',
+        templateUrl: 'sbadmin2/directive/dashboard/stats/stats.html',
         restrict: 'E',
         replace: true,
         scope: {
@@ -120,7 +118,7 @@ angular.module('SBAdmin2').directive('stats', function (SBADMIN2_ROOT) {
     };
 });
 
-angular.module('SBAdmin2').directive('diff', function(SBADMIN2_ROOT) {
+angular.module('SBAdmin2').directive('diff', function() {
 	return {
 		restrict: 'E',
 		replace: true,
@@ -128,7 +126,7 @@ angular.module('SBAdmin2').directive('diff', function(SBADMIN2_ROOT) {
 			diffValue: '=',
 			diffGood: '@'
 		},
-		templateUrl: SBADMIN2_ROOT + 'directive/diff/diff.html',
+		templateUrl: 'sbadmin2/directive/diff/diff.html',
 		link: function(scope, element, attrs, fn) {
 
 		}
@@ -141,10 +139,10 @@ angular.module('SBAdmin2').directive('diff', function(SBADMIN2_ROOT) {
  * @description
  * # adminPosHeader
  */
-angular.module('SBAdmin2').directive('headerNotification', function (SBADMIN2_ROOT) {
+angular.module('SBAdmin2').directive('headerNotification', function () {
     'use strict';
     return {
-        templateUrl: SBADMIN2_ROOT + 'directive/header/header-notification/header-notification.html',
+        templateUrl: 'sbadmin2/directive/header/header-notification/header-notification.html',
         restrict: 'E',
         replace: true,
         scope: {
@@ -161,10 +159,10 @@ angular.module('SBAdmin2').directive('headerNotification', function (SBADMIN2_RO
  * @description
  * # adminPosHeader
  */
-angular.module('SBAdmin2').directive('header', function (SBADMIN2_ROOT) {
+angular.module('SBAdmin2').directive('header', function () {
     'use strict';
     return {
-        templateUrl: SBADMIN2_ROOT + 'directive/header/header.html',
+        templateUrl: 'sbadmin2/directive/header/header.html',
         restrict: 'E',
         replace: true
     };
@@ -178,10 +176,10 @@ angular.module('SBAdmin2').directive('header', function (SBADMIN2_ROOT) {
  * @description
  * # adminPosHeader
  */
-angular.module('SBAdmin2').directive('notifications', function (SBADMIN2_ROOT) {
+angular.module('SBAdmin2').directive('notifications', function () {
     'use strict';
     return {
-        templateUrl: SBADMIN2_ROOT + 'directive/notifications/notifications.html',
+        templateUrl: 'sbadmin2/directive/notifications/notifications.html',
         restrict: 'E',
         replace: true,
         scope: {
@@ -191,7 +189,7 @@ angular.module('SBAdmin2').directive('notifications', function (SBADMIN2_ROOT) {
 });
 
 
-angular.module('SBAdmin2').directive('panel', function(SBADMIN2_ROOT) {
+angular.module('SBAdmin2').directive('panel', function() {
 	return {
 		restrict: 'E',
 		replace: true,
@@ -201,7 +199,7 @@ angular.module('SBAdmin2').directive('panel', function(SBADMIN2_ROOT) {
 			menuItems: '@'
 		},
 		transclude: true,
-		templateUrl: SBADMIN2_ROOT + 'directive/panel/panel.html'
+		templateUrl: 'sbadmin2/directive/panel/panel.html'
 	};
 });
 
@@ -212,10 +210,10 @@ angular.module('SBAdmin2').directive('panel', function(SBADMIN2_ROOT) {
  * # adminPosHeader
  */
 
-angular.module('SBAdmin2').directive('sidebarSearch', function (SBADMIN2_ROOT) {
+angular.module('SBAdmin2').directive('sidebarSearch', function () {
     'use strict';
     return {
-        templateUrl: SBADMIN2_ROOT + 'directive/sidebar/sidebar-search/sidebar-search.html',
+        templateUrl: 'sbadmin2/directive/sidebar/sidebar-search/sidebar-search.html',
         restrict: 'E',
         replace: true,
         scope: {},
@@ -232,10 +230,10 @@ angular.module('SBAdmin2').directive('sidebarSearch', function (SBADMIN2_ROOT) {
  * # adminPosHeader
  */
 
-angular.module('SBAdmin2').directive('sidebar', function (SBADMIN2_ROOT) {
+angular.module('SBAdmin2').directive('sidebar', function () {
     'use strict';
     return {
-        templateUrl: SBADMIN2_ROOT + 'directive/sidebar/sidebar.html',
+        templateUrl: 'sbadmin2/directive/sidebar/sidebar.html',
         restrict: 'E',
         replace: true,
         scope: {
@@ -276,10 +274,10 @@ angular.module('SBAdmin2').directive('sidebar', function (SBADMIN2_ROOT) {
  * @description
  * # adminPosHeader
  */
-angular.module('SBAdmin2').directive('timeline', function (SBADMIN2_ROOT) {
+angular.module('SBAdmin2').directive('timeline', function () {
     'use strict';
     return {
-        templateUrl: SBADMIN2_ROOT + 'directive/timeline/timeline.html',
+        templateUrl: 'sbadmin2/directive/timeline/timeline.html',
         restrict: 'E',
         scope: {
             items: '='

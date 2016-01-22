@@ -1,4 +1,4 @@
-angular.module('SBAdmin2').directive('diff', function(SBADMIN2_ROOT) {
+angular.module('SBAdmin2').directive('diff', function() {
 	return {
 		restrict: 'E',
 		replace: true,
@@ -6,7 +6,7 @@ angular.module('SBAdmin2').directive('diff', function(SBADMIN2_ROOT) {
 			diffValue: '=',
 			diffGood: '@'
 		},
-		templateUrl: SBADMIN2_ROOT + 'directive/diff/diff.html',
+		templateUrl: 'sbadmin2/directive/diff/diff.html',
 		link: function(scope, element, attrs, fn) {
 
 		}

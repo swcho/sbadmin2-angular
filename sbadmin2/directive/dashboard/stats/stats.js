@@ -4,10 +4,10 @@
  * @description
  * # adminPosHeader
  */
-angular.module('SBAdmin2').directive('stats', function (SBADMIN2_ROOT) {
+angular.module('SBAdmin2').directive('stats', function () {
     'use strict';
     return {
-        templateUrl: SBADMIN2_ROOT + 'directive/dashboard/stats/stats.html',
+        templateUrl: 'sbadmin2/directive/dashboard/stats/stats.html',
         restrict: 'E',
         replace: true,
         scope: {

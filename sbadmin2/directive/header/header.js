@@ -4,10 +4,10 @@
  * @description
  * # adminPosHeader
  */
-angular.module('SBAdmin2').directive('header', function (SBADMIN2_ROOT) {
+angular.module('SBAdmin2').directive('header', function () {
     'use strict';
     return {
-        templateUrl: SBADMIN2_ROOT + 'directive/header/header.html',
+        templateUrl: 'sbadmin2/directive/header/header.html',
         restrict: 'E',
         replace: true
     };

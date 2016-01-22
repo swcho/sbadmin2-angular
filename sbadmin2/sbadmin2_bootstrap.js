@@ -8,12 +8,10 @@
         };
     });
 
-    var scripts = document.getElementsByTagName("script");
-    var currentScriptPath = scripts[scripts.length-1].src.replace('sbadmin2.js', '');
-
-    console.info('SBAdmin2 loaded from: ' + currentScriptPath);
-
-    sbadmin2.constant('SBADMIN2_ROOT', currentScriptPath);
+    //var scripts = document.getElementsByTagName("script");
+    //var currentScriptPath = scripts[scripts.length-1].src.replace('sbadmin2.js', '');
+    //console.info('SBAdmin2 loaded from: ' + currentScriptPath);
+    //sbadmin2.constant('SBADMIN2_ROOT', currentScriptPath);
 
     sbadmin2.config(function($stateProvider) {
 

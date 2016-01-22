@@ -1,5 +1,5 @@
 
-angular.module('SBAdmin2').directive('panel', function(SBADMIN2_ROOT) {
+angular.module('SBAdmin2').directive('panel', function() {
 	return {
 		restrict: 'E',
 		replace: true,
@@ -9,6 +9,6 @@ angular.module('SBAdmin2').directive('panel', function(SBADMIN2_ROOT) {
 			menuItems: '@'
 		},
 		transclude: true,
-		templateUrl: SBADMIN2_ROOT + 'directive/panel/panel.html'
+		templateUrl: 'sbadmin2/directive/panel/panel.html'
 	};
 });
