@@ -17,7 +17,7 @@ angular.module('SBAdmin2').directive('stats', function () {
             'name': '@',
             'colour': '@',
             'details': '@',
-            'type': '@',
+            'ico': '@',
             'goto': '@'
         }
     };

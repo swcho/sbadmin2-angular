@@ -30,7 +30,7 @@ angular.module('SBAdmin2').run(['$templateCache', function($templateCache) {
 
 
   $templateCache.put('sbadmin2/directive/dashboard/stats/stats.html',
-    "<div class=\"col-lg-3 col-md-6\"><div class=\"panel panel-{{colour}}\"><div class=panel-heading><div class=row><div class=col-xs-3><i class=\"fa fa-{{type}} fa-5x\"></i></div><div class=\"col-xs-9 text-right\"><div class=huge>{{number}}</div><div>{{comments}}</div></div></div></div><a ui-sref={{goto}}><div class=panel-footer><span class=pull-left>View Details</span> <span class=pull-right><i class=\"fa fa-arrow-circle-right\"></i></span><div class=clearfix></div></div></a></div></div>"
+    "<div><div class=\"panel {{colour}}\"><div class=panel-heading><div class=row><div class=col-xs-3><i class=\"fa {{ico}} fa-5x\"></i></div><div class=\"col-xs-9 text-right\"><div class=huge>{{number}}</div><div>{{comments}}</div></div></div></div><a ng-if=goto ui-sref={{goto}}><div class=panel-footer><span class=pull-left>View Details</span> <span class=pull-right><i class=\"fa fa-arrow-circle-right\"></i></span><div class=clearfix></div></div></a></div></div>"
   );
 
 
@@ -112,7 +112,7 @@ angular.module('SBAdmin2').directive('stats', function () {
             'name': '@',
             'colour': '@',
             'details': '@',
-            'type': '@',
+            'ico': '@',
             'goto': '@'
         }
     };

@@ -243,7 +243,7 @@ module.exports = function (grunt) {
   grunt.event.on('watch', function(action, filepath) {
     //https://github.com/gruntjs/grunt-contrib-watch/issues/156
 
-    var tasksToRun = ['concat'];
+    var tasksToRun = ['ngtemplates:sbadmin2', 'concat'];
 
     if (filepath.lastIndexOf('.js') !== -1 && filepath.lastIndexOf('.js') === filepath.length - 3) {
 

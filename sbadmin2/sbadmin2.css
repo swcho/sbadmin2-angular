@@ -433,3 +433,17 @@ table.dataTable thead .sorting:after {
 .panel-yellow a:hover {
   color: #df8a13;
 }
+.panel-grey {
+  border-color: #999999;
+}
+.panel-grey .panel-heading {
+  border-color: #999999;
+  color: white;
+  background-color: #999999;
+}
+.panel-grey a {
+  color: #999999;
+}
+.panel-grey a:hover {
+  color: #737373;
+}
