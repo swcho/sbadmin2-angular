@@ -1,6 +1,6 @@
 
 (function() {
-    var sbadmin2 = angular.module('SBAdmin2', ['ui.bootstrap','ui.utils','ui.router','ngAnimate']);
+    var sbadmin2 = angular.module('SBAdmin2', ['ui.bootstrap','ui.router','ngAnimate']);
     sbadmin2.filter('unsafe', function($sce) { return $sce.trustAsHtml; });
     sbadmin2.filter('fromNow', function() {
         return function(dateString) {
